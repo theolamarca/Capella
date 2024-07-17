@@ -405,7 +405,7 @@
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="f3219133-db16-480d-8cf7-617adf2a5ec7" name="CTO System">
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-              id="0aad5fa8-9735-43be-b814-0b29ae8111c2" name="SRI" source="#9e44b12a-d066-4a64-88ea-fe9d6158d6f8"
+              id="0aad5fa8-9735-43be-b814-0b29ae8111c2" name="SRI_Feeder" source="#9e44b12a-d066-4a64-88ea-fe9d6158d6f8"
               target="#d68c5e6c-dcb2-418d-bb0d-35320878c9d4" kind="FLOW"/>
           <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
               id="8a048319-d599-4a87-afe9-995108d0aa2c" name="IP" source="#661f2a3f-f3f9-4a3e-82e9-6804a6a54080"
@@ -670,6 +670,9 @@
                   <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                       id="a15c9c65-c4e1-40fa-b2ec-c98a7cf961a2" targetElement="#edeb37a3-fc71-4e22-99ad-fe45cab94bae"
                       sourceElement="#daa993a6-cd60-4a1f-ab6a-441c622beef3"/>
+                  <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                      id="e7483161-04a2-4747-9829-ceb359a5543c" targetElement="#b9441a27-73dc-4b1d-ba54-04c29e44b40a"
+                      sourceElement="#daa993a6-cd60-4a1f-ab6a-441c622beef3"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="479fe2b6-c190-4cdd-b1df-ae24f5c780b0" name="PP 4">
@@ -796,11 +799,17 @@
                   <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                       id="e88de18d-4c6f-481c-9594-82aefa68a8bd" targetElement="#6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30"
                       sourceElement="#a0b8189d-b161-4aa5-b579-05deb0bc9918"/>
+                  <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                      id="52d5f335-8399-45ac-9468-fe3a4be2df50" targetElement="#b7e09930-1e21-4d9f-a5be-be945225cc3a"
+                      sourceElement="#a0b8189d-b161-4aa5-b579-05deb0bc9918"/>
                 </ownedFeatures>
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
                     id="536cf95c-4f61-4dc7-b7b0-e37ad3ce6a09" name="PP 2">
                   <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                       id="5992ab25-25d9-43c4-a292-1ac01084b4dc" targetElement="#9e44b12a-d066-4a64-88ea-fe9d6158d6f8"
+                      sourceElement="#536cf95c-4f61-4dc7-b7b0-e37ad3ce6a09"/>
+                  <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                      id="6a8e74b9-4ea7-442b-a42f-b20f45002198" targetElement="#d6d11979-1424-470e-a8a7-ac7299a4838e"
                       sourceElement="#536cf95c-4f61-4dc7-b7b0-e37ad3ce6a09"/>
                 </ownedFeatures>
               </ownedPhysicalComponents>
@@ -948,9 +957,16 @@
                     <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
                         id="39fac29b-8120-4396-a771-a8d95abb500f" targetElement="#d68c5e6c-dcb2-418d-bb0d-35320878c9d4"
                         sourceElement="#472f1cdf-62c9-4d9b-9eb0-ba791b040434"/>
+                    <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                        id="c1f1baa5-9b1e-4f66-aa60-e864070bf459" targetElement="#2972a9a6-8d8c-4f48-be6f-f253267d9770"
+                        sourceElement="#472f1cdf-62c9-4d9b-9eb0-ba791b040434"/>
                   </ownedFeatures>
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                      id="d9c51383-f4bf-4cf1-8668-a04307bbcb29" name="PP 2"/>
+                      id="d9c51383-f4bf-4cf1-8668-a04307bbcb29" name="PP 2">
+                    <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                        id="d1584f7a-0aac-48ad-8449-7e667ee4b679" targetElement="#0523761e-1ad6-449b-8d28-584f04c20d56"
+                        sourceElement="#d9c51383-f4bf-4cf1-8668-a04307bbcb29"/>
+                  </ownedFeatures>
                 </ownedPhysicalComponents>
                 <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                     id="e2e36535-2ee6-4fc1-973e-5e4882f15f01" name="Master Reference Oscillator"
@@ -1070,7 +1086,11 @@
                     id="5e1dcf28-1eb6-42ed-a825-3045638fe282" name="On Board Processing Unit"
                     nature="NODE">
                   <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:PhysicalPort"
-                      id="0e33950f-996e-4e4a-a53d-f8a1f7573327" name="PP 1"/>
+                      id="0e33950f-996e-4e4a-a53d-f8a1f7573327" name="PP 1">
+                    <ownedComponentPortAllocations xsi:type="org.polarsys.capella.core.data.fa:ComponentPortAllocation"
+                        id="9c594dae-9b30-4f97-9f22-08e005b284f2" targetElement="#6a7fe810-4122-4009-8664-c6e8f3b7b710"
+                        sourceElement="#0e33950f-996e-4e4a-a53d-f8a1f7573327"/>
+                  </ownedFeatures>
                 </ownedPhysicalComponents>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
@@ -1082,7 +1102,7 @@
           <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
               id="75f9509b-45de-46c4-8010-5c7c1eaa7a1b" name="SW Instances" nature="BEHAVIOR">
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="45931bf0-e87d-4f72-9b45-086920631626" name="SRI" source="#6a7fe810-4122-4009-8664-c6e8f3b7b710"
+                id="45931bf0-e87d-4f72-9b45-086920631626" name="SRI_ISL" source="#6a7fe810-4122-4009-8664-c6e8f3b7b710"
                 target="#0523761e-1ad6-449b-8d28-584f04c20d56" kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
                 id="e127a420-d602-4a50-b2a2-b2a1c79b86dc" name="C 2" source="#5bedce15-e101-423f-b11a-1ab9d31a4c6d"
@@ -1095,12 +1115,13 @@
                 source="#05a3b2b4-727e-4832-aabc-68ab3ceb27c6" target="#6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="b20b193e-1c06-41f9-a974-af17e93e1e99" name="Orchestrator Link"
+                id="b20b193e-1c06-41f9-a974-af17e93e1e99" name="Orchestrator to nRT-RIC"
                 source="#edeb37a3-fc71-4e22-99ad-fe45cab94bae" target="#3058f967-1150-46e9-a64a-7a8cde35fd30"
                 kind="FLOW"/>
             <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="6e78fdbc-bd6a-4f7a-9063-473bca40f58b" name="C 6" source="#b9441a27-73dc-4b1d-ba54-04c29e44b40a"
-                target="#b7e09930-1e21-4d9f-a5be-be945225cc3a" kind="FLOW"/>
+                id="6e78fdbc-bd6a-4f7a-9063-473bca40f58b" name="Orchestrator to DU"
+                source="#b9441a27-73dc-4b1d-ba54-04c29e44b40a" target="#b7e09930-1e21-4d9f-a5be-be945225cc3a"
+                kind="FLOW"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="219e40c8-5885-4d69-a6d5-8974bb708429"
                 name="Payload Software" abstractType="#23eb7ba3-3e60-436f-b739-84fbff532bfc"/>
             <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="469658af-f04f-42cd-acea-63201c264f9b"
@@ -1192,9 +1213,9 @@
             <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
                 id="d489c2a8-a047-4985-a514-4f57fac99e38" name="Payload SWI" nature="BEHAVIOR">
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="31a16dbb-7f58-43c9-91a1-14851ecbfacf"
-                  name="Gigabit Switching" abstractType="#9a28965c-55e9-4d47-a241-00e170495b4d"/>
+                  name="Gigabit Switch" abstractType="#9a28965c-55e9-4d47-a241-00e170495b4d"/>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="9a28965c-55e9-4d47-a241-00e170495b4d" name="Gigabit Switching"
+                  id="9a28965c-55e9-4d47-a241-00e170495b4d" name="Gigabit Switch"
                   nature="BEHAVIOR">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                     id="5bedce15-e101-423f-b11a-1ab9d31a4c6d" name="CP 1" orientation="INOUT"
@@ -1226,7 +1247,7 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ffe5827b-9c2a-4b25-9b3d-5a5898f37409"
                   name="5G NTN UE Stack" abstractType="#00caa0ba-f1a7-4099-ad8c-a63ff984e236"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e840f45c-dadd-4de2-97b5-3e1257575ff0"
-                  name="5G gNb DUs + RU low-phy" abstractType="#6b6e4891-037a-4d44-acec-201e686cbc40"/>
+                  name="5G gNb DUs" abstractType="#6b6e4891-037a-4d44-acec-201e686cbc40"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="301f5cdc-0fb9-4fc8-883d-4ff7a68733a9"
                   name="non-RT-RIC" abstractType="#626c83a7-0abd-4704-a00d-70ae97358afa"/>
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c522d840-127d-4239-be72-b7f2116fba51"
@@ -1263,8 +1284,7 @@
                     kind="FLOW"/>
               </ownedPhysicalComponents>
               <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="6b6e4891-037a-4d44-acec-201e686cbc40" name="5G gNb DUs + RU low-phy"
-                  nature="BEHAVIOR">
+                  id="6b6e4891-037a-4d44-acec-201e686cbc40" name="5G gNb DUs" nature="BEHAVIOR">
                 <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
                     id="6750ac7d-c7e3-4eb9-aa66-f3c9eaa3dfbb" name="CP 1" orientation="OUT"
                     kind="FLOW"/>
