@@ -382,6 +382,8 @@
             name="CTO System" abstractType="#f3219133-db16-480d-8cf7-617adf2a5ec7"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="0c031ebc-8d8c-4447-a331-efa0041c2d74"
             name="External Entities" abstractType="#c09c4782-936b-4c8a-9dc2-3dd48f172a83"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="a2f0e018-1079-4de7-bdbf-6779c8745575"
+            name="SW Instances" abstractType="#75f9509b-45de-46c4-8010-5c7c1eaa7a1b"/>
         <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
             id="c707cae8-c3d0-4f75-901f-789da6696014" name="N6 Interface" source="#31ab6ec4-16cc-46a7-ac89-0526f40433be"
             target="#3d73d9e3-6f8b-42f5-bd3b-b0d1c8aa5da3" kind="FLOW"/>
@@ -406,8 +408,6 @@
               name="Ground Segment" abstractType="#f9c0a0d0-f9c1-4f04-9b08-32bd2f8a4152"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9869352d-4a80-4d57-b1b4-1a2743b40ddc"
               name="Space Segment" abstractType="#7c092ca7-1fde-4708-b9db-2d084cf161ae"/>
-          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="a2f0e018-1079-4de7-bdbf-6779c8745575"
-              name="SW Instances" abstractType="#75f9509b-45de-46c4-8010-5c7c1eaa7a1b"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="9d7b99d9-1bb4-4b48-bd28-8677e78e7760" targetElement="#c03de184-8eb6-4495-a37e-ea7655b6b43a"
               sourceElement="#f3219133-db16-480d-8cf7-617adf2a5ec7"/>
@@ -1079,271 +1079,6 @@
                   id="8b90151d-a95f-4708-aaac-a3a6c85cb720" name="Structure_1" nature="NODE"/>
             </ownedPhysicalComponents>
           </ownedPhysicalComponents>
-          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-              id="75f9509b-45de-46c4-8010-5c7c1eaa7a1b" name="SW Instances" nature="BEHAVIOR">
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="45931bf0-e87d-4f72-9b45-086920631626" name="SRI_ISL" source="#6a7fe810-4122-4009-8664-c6e8f3b7b710"
-                target="#0523761e-1ad6-449b-8d28-584f04c20d56" kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="0aad5fa8-9735-43be-b814-0b29ae8111c2" name="SRI_Feeder" source="#9e44b12a-d066-4a64-88ea-fe9d6158d6f8"
-                target="#d68c5e6c-dcb2-418d-bb0d-35320878c9d4" kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="27b9e5c6-cf5f-41c2-a22d-a74dc8d174cd" name="NR Uu" source="#6750ac7d-c7e3-4eb9-aa66-f3c9eaa3dfbb"
-                target="#5644bdec-503a-46d8-84b7-21fb9ccc22cc" kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="b20b193e-1c06-41f9-a974-af17e93e1e99" name="Orchestrator to nRT-RIC"
-                source="#edeb37a3-fc71-4e22-99ad-fe45cab94bae" target="#3058f967-1150-46e9-a64a-7a8cde35fd30"
-                kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="5d4e54fa-e439-4243-8b43-2ed11f7b3b83" name="F1" source="#d6d11979-1424-470e-a8a7-ac7299a4838e"
-                target="#2972a9a6-8d8c-4f48-be6f-f253267d9770" kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="6e78fdbc-bd6a-4f7a-9063-473bca40f58b" name="Orchestrator to DU"
-                source="#b9441a27-73dc-4b1d-ba54-04c29e44b40a" target="#b7e09930-1e21-4d9f-a5be-be945225cc3a"
-                kind="FLOW"/>
-            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                id="9c7bbb11-4dab-40f4-86ed-b98c1e9022de" name="N1/2/3 Interface"
-                source="#05a3b2b4-727e-4832-aabc-68ab3ceb27c6" target="#6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30"
-                kind="FLOW"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="219e40c8-5885-4d69-a6d5-8974bb708429"
-                name="Payload SWI" abstractType="#23eb7ba3-3e60-436f-b739-84fbff532bfc"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="469658af-f04f-42cd-acea-63201c264f9b"
-                name="Central Orchestration SWI" abstractType="#c89217ae-dbaf-4d56-a651-3b908adb3e92"/>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7a5cac3c-9483-40ba-9d79-46b6ebd045dd"
-                name="UT SWI" abstractType="#74cfa0e9-b348-43c2-a390-4a118962f29a">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="6dfeca5e-7bcb-4f84-ac36-28ac8fdbb0d0" deployedElement="#ffe5827b-9c2a-4b25-9b3d-5a5898f37409"
-                  location="#7a5cac3c-9483-40ba-9d79-46b6ebd045dd"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="87228604-eed5-421d-a6a8-a8be50f87fb6" deployedElement="#ad2f5253-fc1c-4818-ad5f-55aabf07fec5"
-                  location="#7a5cac3c-9483-40ba-9d79-46b6ebd045dd"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9fea6b9f-f885-4d5a-8879-64bb49ea3931"
-                name="GWS SWI" abstractType="#eaf98021-814e-4bca-a7f8-e448f4a405ef">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="f285e9f9-b277-48a1-b8cf-9b93bb6f26d9" deployedElement="#fe463a5d-6744-438a-9f5c-e7cd860c09bd"
-                  location="#9fea6b9f-f885-4d5a-8879-64bb49ea3931"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="1ae74c18-1929-4d46-8208-16ac868ec46e" deployedElement="#33c649f9-18d5-4c77-93ba-05b192909304"
-                  location="#9fea6b9f-f885-4d5a-8879-64bb49ea3931"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="24650469-969b-49ef-b2c7-5fac5b42f96e"
-                name="Payload SWI" abstractType="#d489c2a8-a047-4985-a514-4f57fac99e38">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="b53f99be-fa98-4bd3-817b-3f4d394c54c2" deployedElement="#e840f45c-dadd-4de2-97b5-3e1257575ff0"
-                  location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="c7453acb-c790-414a-8ea8-52bd2ad84818" deployedElement="#41ab4312-8cc1-48e9-8890-ac7f5c6ac754"
-                  location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="26d11f8c-90ac-4a3b-a951-9c1a0e9f89d0" deployedElement="#301f5cdc-0fb9-4fc8-883d-4ff7a68733a9"
-                  location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="ff45f675-f264-412a-af6b-007e22896e17" deployedElement="#c522d840-127d-4239-be72-b7f2116fba51"
-                  location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="652077a7-702b-49a9-aca3-b7e5df752f6d" deployedElement="#31a16dbb-7f58-43c9-91a1-14851ecbfacf"
-                  location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
-            </ownedFeatures>
-            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="02f7557c-0a58-4194-8c7a-3dfac6c21384"
-                name="5G Core Network SWI" abstractType="#acd1c1bc-9567-4d73-b1a2-776662b458e1">
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="804ab3da-2d5f-4fa4-a3fa-179e68df7c73" deployedElement="#5ec56d19-433e-48db-b148-af3bee25f8e0"
-                  location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="60771b93-a937-4ba0-9127-5ee84672feb6" deployedElement="#fd7d82a9-7f8c-4dd2-bf4e-bddc9580f161"
-                  location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="c4abfa9a-0ae5-4d5e-bbf1-3ad0dd3cd93d" deployedElement="#79c6c60b-a5b9-49e3-b9dc-f4209ce83ae6"
-                  location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
-              <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
-                  id="0b0a3d5f-f991-4a15-98f6-a5beb755f1ba" deployedElement="#9c2c3690-d9f7-4bd1-9c68-48b424103505"
-                  location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
-            </ownedFeatures>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="23eb7ba3-3e60-436f-b739-84fbff532bfc" name="Payload SWI" nature="BEHAVIOR">
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="6a7fe810-4122-4009-8664-c6e8f3b7b710" name="CP 1" orientation="OUT"
-                  kind="FLOW"/>
-            </ownedPhysicalComponents>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="c89217ae-dbaf-4d56-a651-3b908adb3e92" name="Central Orchestration SWI"
-                nature="BEHAVIOR">
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="edeb37a3-fc71-4e22-99ad-fe45cab94bae" name="CP 1" orientation="OUT"
-                  kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="b9441a27-73dc-4b1d-ba54-04c29e44b40a" name="CP 2" orientation="OUT"
-                  kind="FLOW"/>
-            </ownedPhysicalComponents>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="74cfa0e9-b348-43c2-a390-4a118962f29a" name="UT SWI" nature="BEHAVIOR">
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ffe5827b-9c2a-4b25-9b3d-5a5898f37409"
-                  name="5G NTN UE Stack" abstractType="#00caa0ba-f1a7-4099-ad8c-a63ff984e236"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ad2f5253-fc1c-4818-ad5f-55aabf07fec5"
-                  name="4/5G TN UE Stack" abstractType="#052d7b38-b2bd-4ec8-af32-a1b71fd4eb3d"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="00caa0ba-f1a7-4099-ad8c-a63ff984e236" name="5G NTN UE Stack"
-                  nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="5644bdec-503a-46d8-84b7-21fb9ccc22cc" name="CP 1" orientation="IN"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="bf75a5f6-7551-4751-8deb-6947dcb36043" name="CP 3" orientation="OUT"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="052d7b38-b2bd-4ec8-af32-a1b71fd4eb3d" name="4/5G TN UE Stack"
-                  nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="ff001f3d-2242-4ea1-a570-d5aaf61f4544" name="CP 2" orientation="IN"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="a9b18cb2-e9d2-4ebd-ae06-d5dbf3d3c4d4" name="CP 3" orientation="OUT"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-            </ownedPhysicalComponents>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="eaf98021-814e-4bca-a7f8-e448f4a405ef" name="GWS SWI" nature="BEHAVIOR">
-              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                  id="8a048319-d599-4a87-afe9-995108d0aa2c" name="IP" source="#661f2a3f-f3f9-4a3e-82e9-6804a6a54080"
-                  target="#76b19163-b17e-4af0-bddd-df5594e380c9" kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="33c649f9-18d5-4c77-93ba-05b192909304"
-                  name="DVB-S2X Stack" abstractType="#12592665-c94a-4ff8-9bd6-d1917b2fbdc8"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fe463a5d-6744-438a-9f5c-e7cd860c09bd"
-                  name="5G gNb CUs" abstractType="#3861a02b-1ce8-4060-b39d-d0d73df5cade"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="12592665-c94a-4ff8-9bd6-d1917b2fbdc8" name="DVB-S2X Stack" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="9e44b12a-d066-4a64-88ea-fe9d6158d6f8" name="CP 1" orientation="OUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="76b19163-b17e-4af0-bddd-df5594e380c9" name="CP 2" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="3861a02b-1ce8-4060-b39d-d0d73df5cade" name="5G gNb CUs" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30" name="CP 1" orientation="IN"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="d6d11979-1424-470e-a8a7-ac7299a4838e" name="CP 4" orientation="OUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="661f2a3f-f3f9-4a3e-82e9-6804a6a54080" name="CP 5" orientation="OUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="b7e09930-1e21-4d9f-a5be-be945225cc3a" name="CP 6" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-            </ownedPhysicalComponents>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="d489c2a8-a047-4985-a514-4f57fac99e38" name="Payload SWI" nature="BEHAVIOR">
-              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                  id="35b256d4-6571-48cd-b4ef-9be4a0ca32f6" name="C 3" source="#5c5c8d5e-9133-4515-abe2-01baf3d8bd5c"
-                  target="#73bfb7fa-799b-4479-8580-995d12c66d3c" kind="FLOW"/>
-              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                  id="e127a420-d602-4a50-b2a2-b2a1c79b86dc" name="C 2" source="#5bedce15-e101-423f-b11a-1ab9d31a4c6d"
-                  target="#c9bea251-e833-47ae-81a5-023c51be499b" kind="FLOW"/>
-              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                  id="848d6329-83ea-402b-8146-9d50c9ff22aa" name="E2" source="#2f16f74d-358d-4414-9311-0aca16d7d76e"
-                  target="#07aad799-7acf-452d-a3e4-d1133dbff7fe" kind="FLOW"/>
-              <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
-                  id="84abbf0c-58ed-4d57-a1df-ea35bc8d369e" name="A1" source="#099eeaa4-e2ef-4fa4-bdd6-d6ccab7f4354"
-                  target="#a17e6e4b-a64c-4a97-9172-c00f1f7aace8" kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="31a16dbb-7f58-43c9-91a1-14851ecbfacf"
-                  name="Gigabit Switch" abstractType="#9a28965c-55e9-4d47-a241-00e170495b4d"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="41ab4312-8cc1-48e9-8890-ac7f5c6ac754"
-                  name="DVB-S2X Stack" abstractType="#4f507c67-91af-44b2-8b02-4537f4aefccc"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e840f45c-dadd-4de2-97b5-3e1257575ff0"
-                  name="5G gNb DUs" abstractType="#6b6e4891-037a-4d44-acec-201e686cbc40"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="301f5cdc-0fb9-4fc8-883d-4ff7a68733a9"
-                  name="non-RT-RIC" abstractType="#626c83a7-0abd-4704-a00d-70ae97358afa"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c522d840-127d-4239-be72-b7f2116fba51"
-                  name="near-RT-RIC" abstractType="#8b0c300f-8627-4d67-ba99-b36c23386c50"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="9a28965c-55e9-4d47-a241-00e170495b4d" name="Gigabit Switch"
-                  nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="5bedce15-e101-423f-b11a-1ab9d31a4c6d" name="CP 1" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="5c5c8d5e-9133-4515-abe2-01baf3d8bd5c" name="CP 2" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="0523761e-1ad6-449b-8d28-584f04c20d56" name="CP 2" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="4f507c67-91af-44b2-8b02-4537f4aefccc" name="DVB-S2X Stack" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="73bfb7fa-799b-4479-8580-995d12c66d3c" name="CP 2" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="d68c5e6c-dcb2-418d-bb0d-35320878c9d4" name="CP 3" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="6b6e4891-037a-4d44-acec-201e686cbc40" name="5G gNb DUs" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="6750ac7d-c7e3-4eb9-aa66-f3c9eaa3dfbb" name="CP 1" orientation="OUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="07aad799-7acf-452d-a3e4-d1133dbff7fe" name="CP 2" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="c9bea251-e833-47ae-81a5-023c51be499b" name="CP 3" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="2972a9a6-8d8c-4f48-be6f-f253267d9770" name="CP 4" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="626c83a7-0abd-4704-a00d-70ae97358afa" name="non-RT-RIC" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="099eeaa4-e2ef-4fa4-bdd6-d6ccab7f4354" name="CP 3" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="3058f967-1150-46e9-a64a-7a8cde35fd30" name="CP 2" orientation="IN"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="8b0c300f-8627-4d67-ba99-b36c23386c50" name="near-RT-RIC" nature="BEHAVIOR">
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="2f16f74d-358d-4414-9311-0aca16d7d76e" name="CP 1" orientation="INOUT"
-                    kind="FLOW"/>
-                <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                    id="a17e6e4b-a64c-4a97-9172-c00f1f7aace8" name="CP 3" orientation="INOUT"
-                    kind="FLOW"/>
-              </ownedPhysicalComponents>
-            </ownedPhysicalComponents>
-            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                id="acd1c1bc-9567-4d73-b1a2-776662b458e1" name="5G Core Network SWI"
-                nature="BEHAVIOR">
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="05a3b2b4-727e-4832-aabc-68ab3ceb27c6" name="CP 2" orientation="OUT"
-                  kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
-                  id="31ab6ec4-16cc-46a7-ac89-0526f40433be" name="CP 1" orientation="IN"
-                  kind="FLOW"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="79c6c60b-a5b9-49e3-b9dc-f4209ce83ae6"
-                  name="5G SMF" abstractType="#947798b1-e2ad-43ea-9ab1-9a22aca7b8fe"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fd7d82a9-7f8c-4dd2-bf4e-bddc9580f161"
-                  name="5G AMF" abstractType="#6c44ce7e-ef69-4cea-80d5-12a68dbe1e8e"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9c2c3690-d9f7-4bd1-9c68-48b424103505"
-                  name="5G AUSF" abstractType="#9b937921-db75-4fe7-ae4c-8fb32c86bc5b"/>
-              <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5ec56d19-433e-48db-b148-af3bee25f8e0"
-                  name="5G UPF" abstractType="#4a517885-8f1f-420f-90f7-fe92ea4c404f"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="947798b1-e2ad-43ea-9ab1-9a22aca7b8fe" name="5G SMF" nature="BEHAVIOR"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="6c44ce7e-ef69-4cea-80d5-12a68dbe1e8e" name="5G AMF" nature="BEHAVIOR"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="9b937921-db75-4fe7-ae4c-8fb32c86bc5b" name="5G AUSF" nature="BEHAVIOR"/>
-              <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
-                  id="4a517885-8f1f-420f-90f7-fe92ea4c404f" name="5G UPF" nature="BEHAVIOR"/>
-            </ownedPhysicalComponents>
-          </ownedPhysicalComponents>
         </ownedPhysicalComponents>
         <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
             id="c09c4782-936b-4c8a-9dc2-3dd48f172a83" name="External Entities" actor="true"
@@ -1415,6 +1150,268 @@
                     sourceElement="#8c0f23d1-c744-4e9c-93b8-a2602bb9f6cf"/>
               </ownedFeatures>
             </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+        </ownedPhysicalComponents>
+        <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+            id="75f9509b-45de-46c4-8010-5c7c1eaa7a1b" name="SW Instances" nature="BEHAVIOR">
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="45931bf0-e87d-4f72-9b45-086920631626" name="SRI_ISL" source="#6a7fe810-4122-4009-8664-c6e8f3b7b710"
+              target="#0523761e-1ad6-449b-8d28-584f04c20d56" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="0aad5fa8-9735-43be-b814-0b29ae8111c2" name="SRI_Feeder" source="#9e44b12a-d066-4a64-88ea-fe9d6158d6f8"
+              target="#d68c5e6c-dcb2-418d-bb0d-35320878c9d4" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="27b9e5c6-cf5f-41c2-a22d-a74dc8d174cd" name="NR Uu" source="#6750ac7d-c7e3-4eb9-aa66-f3c9eaa3dfbb"
+              target="#5644bdec-503a-46d8-84b7-21fb9ccc22cc" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="b20b193e-1c06-41f9-a974-af17e93e1e99" name="Orchestrator to nRT-RIC"
+              source="#edeb37a3-fc71-4e22-99ad-fe45cab94bae" target="#3058f967-1150-46e9-a64a-7a8cde35fd30"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="5d4e54fa-e439-4243-8b43-2ed11f7b3b83" name="F1" source="#d6d11979-1424-470e-a8a7-ac7299a4838e"
+              target="#2972a9a6-8d8c-4f48-be6f-f253267d9770" kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="6e78fdbc-bd6a-4f7a-9063-473bca40f58b" name="Orchestrator to DU"
+              source="#b9441a27-73dc-4b1d-ba54-04c29e44b40a" target="#b7e09930-1e21-4d9f-a5be-be945225cc3a"
+              kind="FLOW"/>
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="9c7bbb11-4dab-40f4-86ed-b98c1e9022de" name="N1/2/3 Interface" source="#05a3b2b4-727e-4832-aabc-68ab3ceb27c6"
+              target="#6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30" kind="FLOW"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="219e40c8-5885-4d69-a6d5-8974bb708429"
+              name="Payload SWI" abstractType="#23eb7ba3-3e60-436f-b739-84fbff532bfc"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="469658af-f04f-42cd-acea-63201c264f9b"
+              name="Central Orchestration SWI" abstractType="#c89217ae-dbaf-4d56-a651-3b908adb3e92"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="7a5cac3c-9483-40ba-9d79-46b6ebd045dd"
+              name="UT SWI" abstractType="#74cfa0e9-b348-43c2-a390-4a118962f29a">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="6dfeca5e-7bcb-4f84-ac36-28ac8fdbb0d0" deployedElement="#ffe5827b-9c2a-4b25-9b3d-5a5898f37409"
+                location="#7a5cac3c-9483-40ba-9d79-46b6ebd045dd"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="87228604-eed5-421d-a6a8-a8be50f87fb6" deployedElement="#ad2f5253-fc1c-4818-ad5f-55aabf07fec5"
+                location="#7a5cac3c-9483-40ba-9d79-46b6ebd045dd"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9fea6b9f-f885-4d5a-8879-64bb49ea3931"
+              name="GWS SWI" abstractType="#eaf98021-814e-4bca-a7f8-e448f4a405ef">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="f285e9f9-b277-48a1-b8cf-9b93bb6f26d9" deployedElement="#fe463a5d-6744-438a-9f5c-e7cd860c09bd"
+                location="#9fea6b9f-f885-4d5a-8879-64bb49ea3931"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="1ae74c18-1929-4d46-8208-16ac868ec46e" deployedElement="#33c649f9-18d5-4c77-93ba-05b192909304"
+                location="#9fea6b9f-f885-4d5a-8879-64bb49ea3931"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="24650469-969b-49ef-b2c7-5fac5b42f96e"
+              name="Payload SWI" abstractType="#d489c2a8-a047-4985-a514-4f57fac99e38">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="b53f99be-fa98-4bd3-817b-3f4d394c54c2" deployedElement="#e840f45c-dadd-4de2-97b5-3e1257575ff0"
+                location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="c7453acb-c790-414a-8ea8-52bd2ad84818" deployedElement="#41ab4312-8cc1-48e9-8890-ac7f5c6ac754"
+                location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="26d11f8c-90ac-4a3b-a951-9c1a0e9f89d0" deployedElement="#301f5cdc-0fb9-4fc8-883d-4ff7a68733a9"
+                location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="ff45f675-f264-412a-af6b-007e22896e17" deployedElement="#c522d840-127d-4239-be72-b7f2116fba51"
+                location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="652077a7-702b-49a9-aca3-b7e5df752f6d" deployedElement="#31a16dbb-7f58-43c9-91a1-14851ecbfacf"
+                location="#24650469-969b-49ef-b2c7-5fac5b42f96e"/>
+          </ownedFeatures>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="02f7557c-0a58-4194-8c7a-3dfac6c21384"
+              name="5G Core Network SWI" abstractType="#acd1c1bc-9567-4d73-b1a2-776662b458e1">
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="804ab3da-2d5f-4fa4-a3fa-179e68df7c73" deployedElement="#5ec56d19-433e-48db-b148-af3bee25f8e0"
+                location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="60771b93-a937-4ba0-9127-5ee84672feb6" deployedElement="#fd7d82a9-7f8c-4dd2-bf4e-bddc9580f161"
+                location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="c4abfa9a-0ae5-4d5e-bbf1-3ad0dd3cd93d" deployedElement="#79c6c60b-a5b9-49e3-b9dc-f4209ce83ae6"
+                location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
+            <ownedDeploymentLinks xsi:type="org.polarsys.capella.core.data.pa.deployment:PartDeploymentLink"
+                id="0b0a3d5f-f991-4a15-98f6-a5beb755f1ba" deployedElement="#9c2c3690-d9f7-4bd1-9c68-48b424103505"
+                location="#02f7557c-0a58-4194-8c7a-3dfac6c21384"/>
+          </ownedFeatures>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="23eb7ba3-3e60-436f-b739-84fbff532bfc" name="Payload SWI" nature="BEHAVIOR">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="6a7fe810-4122-4009-8664-c6e8f3b7b710" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="c89217ae-dbaf-4d56-a651-3b908adb3e92" name="Central Orchestration SWI"
+              nature="BEHAVIOR">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="edeb37a3-fc71-4e22-99ad-fe45cab94bae" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="b9441a27-73dc-4b1d-ba54-04c29e44b40a" name="CP 2" orientation="OUT"
+                kind="FLOW"/>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="74cfa0e9-b348-43c2-a390-4a118962f29a" name="UT SWI" nature="BEHAVIOR">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ffe5827b-9c2a-4b25-9b3d-5a5898f37409"
+                name="5G NTN UE Stack" abstractType="#00caa0ba-f1a7-4099-ad8c-a63ff984e236"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="ad2f5253-fc1c-4818-ad5f-55aabf07fec5"
+                name="4/5G TN UE Stack" abstractType="#052d7b38-b2bd-4ec8-af32-a1b71fd4eb3d"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="00caa0ba-f1a7-4099-ad8c-a63ff984e236" name="5G NTN UE Stack" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="5644bdec-503a-46d8-84b7-21fb9ccc22cc" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="bf75a5f6-7551-4751-8deb-6947dcb36043" name="CP 3" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="052d7b38-b2bd-4ec8-af32-a1b71fd4eb3d" name="4/5G TN UE Stack"
+                nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="ff001f3d-2242-4ea1-a570-d5aaf61f4544" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="a9b18cb2-e9d2-4ebd-ae06-d5dbf3d3c4d4" name="CP 3" orientation="OUT"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="eaf98021-814e-4bca-a7f8-e448f4a405ef" name="GWS SWI" nature="BEHAVIOR">
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="8a048319-d599-4a87-afe9-995108d0aa2c" name="IP" source="#661f2a3f-f3f9-4a3e-82e9-6804a6a54080"
+                target="#76b19163-b17e-4af0-bddd-df5594e380c9" kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="33c649f9-18d5-4c77-93ba-05b192909304"
+                name="DVB-S2X Stack" abstractType="#12592665-c94a-4ff8-9bd6-d1917b2fbdc8"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fe463a5d-6744-438a-9f5c-e7cd860c09bd"
+                name="5G gNb CUs" abstractType="#3861a02b-1ce8-4060-b39d-d0d73df5cade"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="12592665-c94a-4ff8-9bd6-d1917b2fbdc8" name="DVB-S2X Stack" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="9e44b12a-d066-4a64-88ea-fe9d6158d6f8" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="76b19163-b17e-4af0-bddd-df5594e380c9" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="3861a02b-1ce8-4060-b39d-d0d73df5cade" name="5G gNb CUs" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="6e61347e-d1ba-4d3e-b1ba-e1fcdf154a30" name="CP 1" orientation="IN"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="d6d11979-1424-470e-a8a7-ac7299a4838e" name="CP 4" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="661f2a3f-f3f9-4a3e-82e9-6804a6a54080" name="CP 5" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="b7e09930-1e21-4d9f-a5be-be945225cc3a" name="CP 6" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="d489c2a8-a047-4985-a514-4f57fac99e38" name="Payload SWI" nature="BEHAVIOR">
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="35b256d4-6571-48cd-b4ef-9be4a0ca32f6" name="C 3" source="#5c5c8d5e-9133-4515-abe2-01baf3d8bd5c"
+                target="#73bfb7fa-799b-4479-8580-995d12c66d3c" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="e127a420-d602-4a50-b2a2-b2a1c79b86dc" name="C 2" source="#5bedce15-e101-423f-b11a-1ab9d31a4c6d"
+                target="#c9bea251-e833-47ae-81a5-023c51be499b" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="848d6329-83ea-402b-8146-9d50c9ff22aa" name="E2" source="#2f16f74d-358d-4414-9311-0aca16d7d76e"
+                target="#07aad799-7acf-452d-a3e4-d1133dbff7fe" kind="FLOW"/>
+            <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+                id="84abbf0c-58ed-4d57-a1df-ea35bc8d369e" name="A1" source="#099eeaa4-e2ef-4fa4-bdd6-d6ccab7f4354"
+                target="#a17e6e4b-a64c-4a97-9172-c00f1f7aace8" kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="31a16dbb-7f58-43c9-91a1-14851ecbfacf"
+                name="Gigabit Switch" abstractType="#9a28965c-55e9-4d47-a241-00e170495b4d"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="41ab4312-8cc1-48e9-8890-ac7f5c6ac754"
+                name="DVB-S2X Stack" abstractType="#4f507c67-91af-44b2-8b02-4537f4aefccc"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e840f45c-dadd-4de2-97b5-3e1257575ff0"
+                name="5G gNb DUs" abstractType="#6b6e4891-037a-4d44-acec-201e686cbc40"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="301f5cdc-0fb9-4fc8-883d-4ff7a68733a9"
+                name="non-RT-RIC" abstractType="#626c83a7-0abd-4704-a00d-70ae97358afa"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="c522d840-127d-4239-be72-b7f2116fba51"
+                name="near-RT-RIC" abstractType="#8b0c300f-8627-4d67-ba99-b36c23386c50"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="9a28965c-55e9-4d47-a241-00e170495b4d" name="Gigabit Switch" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="5bedce15-e101-423f-b11a-1ab9d31a4c6d" name="CP 1" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="5c5c8d5e-9133-4515-abe2-01baf3d8bd5c" name="CP 2" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="0523761e-1ad6-449b-8d28-584f04c20d56" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="4f507c67-91af-44b2-8b02-4537f4aefccc" name="DVB-S2X Stack" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="73bfb7fa-799b-4479-8580-995d12c66d3c" name="CP 2" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="d68c5e6c-dcb2-418d-bb0d-35320878c9d4" name="CP 3" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="6b6e4891-037a-4d44-acec-201e686cbc40" name="5G gNb DUs" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="6750ac7d-c7e3-4eb9-aa66-f3c9eaa3dfbb" name="CP 1" orientation="OUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="07aad799-7acf-452d-a3e4-d1133dbff7fe" name="CP 2" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="c9bea251-e833-47ae-81a5-023c51be499b" name="CP 3" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="2972a9a6-8d8c-4f48-be6f-f253267d9770" name="CP 4" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="626c83a7-0abd-4704-a00d-70ae97358afa" name="non-RT-RIC" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="099eeaa4-e2ef-4fa4-bdd6-d6ccab7f4354" name="CP 3" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="3058f967-1150-46e9-a64a-7a8cde35fd30" name="CP 2" orientation="IN"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="8b0c300f-8627-4d67-ba99-b36c23386c50" name="near-RT-RIC" nature="BEHAVIOR">
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="2f16f74d-358d-4414-9311-0aca16d7d76e" name="CP 1" orientation="INOUT"
+                  kind="FLOW"/>
+              <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                  id="a17e6e4b-a64c-4a97-9172-c00f1f7aace8" name="CP 3" orientation="INOUT"
+                  kind="FLOW"/>
+            </ownedPhysicalComponents>
+          </ownedPhysicalComponents>
+          <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+              id="acd1c1bc-9567-4d73-b1a2-776662b458e1" name="5G Core Network SWI"
+              nature="BEHAVIOR">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="05a3b2b4-727e-4832-aabc-68ab3ceb27c6" name="CP 2" orientation="OUT"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="31ab6ec4-16cc-46a7-ac89-0526f40433be" name="CP 1" orientation="IN"
+                kind="FLOW"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="79c6c60b-a5b9-49e3-b9dc-f4209ce83ae6"
+                name="5G SMF" abstractType="#947798b1-e2ad-43ea-9ab1-9a22aca7b8fe"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="fd7d82a9-7f8c-4dd2-bf4e-bddc9580f161"
+                name="5G AMF" abstractType="#6c44ce7e-ef69-4cea-80d5-12a68dbe1e8e"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9c2c3690-d9f7-4bd1-9c68-48b424103505"
+                name="5G AUSF" abstractType="#9b937921-db75-4fe7-ae4c-8fb32c86bc5b"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="5ec56d19-433e-48db-b148-af3bee25f8e0"
+                name="5G UPF" abstractType="#4a517885-8f1f-420f-90f7-fe92ea4c404f"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="947798b1-e2ad-43ea-9ab1-9a22aca7b8fe" name="5G SMF" nature="BEHAVIOR"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="6c44ce7e-ef69-4cea-80d5-12a68dbe1e8e" name="5G AMF" nature="BEHAVIOR"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="9b937921-db75-4fe7-ae4c-8fb32c86bc5b" name="5G AUSF" nature="BEHAVIOR"/>
+            <ownedPhysicalComponents xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+                id="4a517885-8f1f-420f-90f7-fe92ea4c404f" name="5G UPF" nature="BEHAVIOR"/>
           </ownedPhysicalComponents>
         </ownedPhysicalComponents>
       </ownedPhysicalComponentPkg>
